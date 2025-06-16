@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>История предприятия</title>
+	<script src="../js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/menu-collapsed.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/comnany.css" />
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="../js/easing.js" type="text/javascript"></script>
+	<script src="../js/jquery.ui.totop.js" type="text/javascript"></script>
+</head>
+<body>
+	<header id="navHeader">	</header>
+	<div id="navMenu" class="nav"></div>
+	<div class="content">
+		<p class="text">История предприятия</p>
+		<a href="#box11984" class="button outline-outward">1984-1994</a>
+		<a href="#box1994" class="button outline-outward">1994-2004</a>
+		<a href="#box2004" class="button outline-outward">2004-2014</a>
+		<a href="#box2014" class="button outline-outward">2014-2025</a>
+		<fieldset id="box11984">
+   		  <legend align="center">1984-1994</legend>
+   		  <div>
+   		  	<p>1985, 1987: Коллектив Радиотелевизионного передающего центра дважды становится победителем социалистического соревнования.
+			
+			<p>В этот период продолжается развитие аналогового телерадиовещания.
+   		  </div>
+  		</fieldset>
+		<fieldset id="box1994">
+   		  <legend align="center">1994-2004</legend>
+   		  <div>
+   		  	<p>25 декабря 1997: РПТС (Ростовский-на-Дону колледж связи и информатики, ранее - техникум связи) был преобразован в Ростовский-на-Дону государственный колледж связи и информатики.
+			
+			<p>2000: Радиотелецентр стал филиалом ВГТРК «Ростовский ОРТПЦ».
+			
+			<p>13 августа 2001: Указом Президента РФ № 1031 была основана «Российская телевизионная и радиовещательная сеть» (РТРС).
+			
+			<p>2002: Радиотелецентр выделился из ВГТРК и стал филиалом РТРС «Ростовский ОРТПЦ». В этом же году РКСИ получил статус базового образовательного учреждения в сфере разработки и внедрения дистанционных образовательных технологий.
+ 			
+   		  </div>
+  		</fieldset>
+  		<fieldset id="box2004">
+   		  <legend align="center">2004-2014</legend>
+   		  <div>
+   		  	<p>Этот период характеризуется подготовкой к переходу на цифровое телевещание.
+			
+			<p>2009-2018: Реализация федеральной целевой программы «Развитие телерадиовещания в Российской Федерации».
+			
+			<p>1 сентября 2012: В Ростовской области запущено цифровое эфирное телевидение (DVB-T2), что предоставило жителям доступ к 10 телеканалам и 3 радиостанциям первого мультиплекса в высоком качестве.
+			
+			<p>Август 2014: В Ростовской области был запущен второй мультиплекс, включающий еще 10 каналов.
+			
+
+   		  </div>
+  		</fieldset>
+  		<fieldset id="box2014">
+   		  <legend align="center">2014-2025</legend>
+   		  <div>
+   		  	<p>Август 2017: В Ростовской области дан старт региональному цифровому вещанию канала ГТРК «Дон-ТР» в эфире телеканалов «Россия 1» и «Россия 24».
+			
+			<p>Продолжается развитие и модернизация цифровой эфирной телесети в Ростовской области.
+	
+			<p>Ростовский ОРТПЦ способствует развитию интернета и мобильной телефонной связи в регионе.
+		  </div>
+  		</fieldset>
+	</div>
+	<hr>
+	<footer id="navFooter">	</footer>
+	<script type="text/javascript">
+		function openbox(id){
+		    display = document.getElementById(id).style.display;
+
+		    if(display=='none'){
+		       document.getElementById(id).style.display='block';
+		    }else{
+		       document.getElementById(id).style.display='none';
+		    }
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<script>
+		$(function(){
+		  $("#navMenu").load("../menu/menu.html");
+		  $("#navFooter").load("../menu/footer.html");
+		  $("#navHeader").load("../menu/header.html");
+		  setTimeout(() => initMenu(), 1000);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Руководство</title>
+	<script src="../js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/menu-collapsed.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/contact.css" />
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="../js/easing.js" type="text/javascript"></script>
+	<script src="../js/jquery.ui.totop.js" type="text/javascript"></script>
+</head>
+<body>
+	<header id="navHeader">	</header>
+	<div id="navMenu" class="nav"></div>
+	<div class="content">
+		<p class="title">Руководство Ростовского ОРТПЦ</p>
+		<fieldset class="table">
+   		  <legend align="center">Директор</legend>
+   		  <div>
+   		  	<p class="adres"><b>Лелюк Дмитрий Иванович</b></p>
+   		  	<p class="adres">Телефон: (863) 240-95-46</p>
+   		  </div>
+  		</fieldset>
+  		<fieldset class="table">
+   		  <legend align="center">Главный инженер</legend>
+   		  <div>
+   		  	<p class="adres"><b>Сидоренко Юрий Николаевич </b> </p>
+   		  	<p class="adres">Телефон: (863) 240-80-59</p>
+			<p class="adres">E-mail: <a href="mailto:ysidorenko@ortpc-rostov.ru">ysidorenko@ortpc-rostov.ru</a></p>
+   		  </div>
+  		</fieldset>
+  		<fieldset class="table">
+   		  <legend align="center">Главный бухгалтер</legend>
+   		  <div>
+   		  	<p class="adres"><b>Луконина Елена Витальевна</b> </p>
+   		  	<p class="adres">Телефон: (863) 223-91 -08</p>
+   		  </div>
+  		</fieldset>
+  		<fieldset class="table">
+   		  <legend align="center">Главный экономист</legend>
+   		  <div>
+   		  	<p class="adres"><b>Черевков Станислав Викторович</b> </p>
+   		  	<p class="adres">Телефон: (863) 262-69-44</p>
+   		  </div>
+  		</fieldset>
+		<fieldset class="table">
+   		  <legend align="center">Заместитель директора</legend>
+   		  <div>
+			<p class="adres"><b>Шутько Михаил Леонтьевич</b> </p>
+   		  	<p class="adres">Телефон: (863) 240-44-67</p>
+   		  	<p class="adres">E-mail: <a href="mailto:mshutko@ortpc-rostov.ru">mshutko@ortpc-rostov.ru</a></p>
+   		  </div>
+  		</fieldset>
+	</div>
+	<hr>
+	<footer id="navFooter">	</footer>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<script>
+		$(function(){
+		  $("#navMenu").load("../menu/menu.html");
+		  $("#navFooter").load("../menu/footer.html");
+		  $("#navHeader").load("../menu/header.html");
+		  initMenu();
+		});
+	</script>
+</body>
+</html>

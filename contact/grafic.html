@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Режим работы</title>
+	<script src="../js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/menu-collapsed.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/contact.css" />
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="../js/easing.js" type="text/javascript"></script>
+	<script src="../js/jquery.ui.totop.js" type="text/javascript"></script>
+	<style>
+		
+		h1 {
+		  color: #0074D9;
+		  text-align: center;
+		  margin-bottom: 20px;
+		}
+		table {
+		  width: 100%;
+		  border-collapse: collapse;
+		  margin-bottom: 20px;
+		}
+		th, td {
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		  text-align: left;
+		}
+		th {
+		  background-color: #0074D9;
+		  color: white;
+		}
+		a {
+		  color: #0074D9;
+		  text-decoration: none;
+		}
+		a:hover {
+		  text-decoration: underline;
+		}
+		.contact-info p {
+		  margin: 8px 0;
+		}
+	</style>
+</head>
+<body>
+	<header id="navHeader">	</header>
+	<div id="navMenu" class="nav"></div>
+	<div class="content">
+		<p class="title">Режим работы</p>
+		<p>Ростовский ОРТПЦ (Областной радиотелевизионный передающий центр) работает в следующем режиме:</p>
+		<ul>
+		  <li>Понедельник - четверг: с 8:00 до 17:00</li>
+		  <li>Пятница: с 8:00 до 15:45</li>
+		  <li>Суббота и воскресенье - выходные дни</li>
+		</ul>
+	  
+		<p>Центр консультационной поддержки расположен по адресу: <b>ул. Большая Садовая, д. 104, Ростов-на-Дону. </b></p>
+		<p> Вопросы можно задавать по телефону <a href="tel:+78632000459">8 (863) 200-04-59</a> или по электронной почте <a href="mailto:zkp@ortpc-rostov.ru">zkp@ortpc-rostov.ru</a>.</p>
+	  
+		<p>Также действует единый круглосуточный информационный центр РТРС с бесплатным номером <a href="tel:88002202002">8 800 220 20 02</a> для звонков из всех регионов России.</p>
+	  
+		<p>Основная задача центра - информирование жителей Ростовской области о цифровом телевидении, стандарте DVB-T2, настройке оборудования и особенностях приема цифрового сигнала.</p>
+	</div>
+	<hr>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<footer id="navFooter">	</footer>
+	<script>
+		$(function(){
+		  $("#navMenu").load("../menu/menu.html");
+		  $("#navFooter").load("../menu/footer.html");
+		  $("#navHeader").load("../menu/header.html");
+		  initMenu();
+		});
+	</script>
+</body>
+</html>

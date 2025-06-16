@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ростовский ОРТПЦ</title>
+	<script src="./js/jquery-1.2.1.min.js" type="text/javascript"></script>
+	<script src="./js/menu-collapsed.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header id="navHeader">	</header>
+	<div id="navMenu" class="nav"></div>
+	</div>
+	<div class="content">
+		
+		<p class="textS">Новостная лента</p><br>
+		<ul id="ticker" class="news">
+			<li>
+				<div class="titleN">
+					<span>
+						Четверг, 30 Апрель 2025
+					</span>		
+					<h2>
+						Администрация Ростовской ОРТПЦ поздравляет всех граждан с наступающим 1 Мая!
+					</h2>			
+				</div>
+				<div class="bodyN">
+					<br>
+					<p align="center"><img class="newIMG" src="newIMG/41.jpg"></p>
+				</div>
+			</li>
+			<li>
+				<div class="titleN">
+					<span>
+						Пятница, 15 Ноября 2024
+					</span>		
+					<h2>
+						РТРС «Ростовский ОРТПЦ» начал трансляцию эфирного вещания радиоканала «SPUTNIK» МИА «Россия Сегодня»
+					</h2>			
+				</div>
+				<div class="bodyN">
+					Передачи радиостанции «SPUTNIK» транслируются на частоте 99,2МГц. Сигнал радиостанции «SPUTNIK» будет доступен жителям г. Ростова-на-Дону, г. Батайска, г. Новочеркасска, г. Азова, а также населенных пунктов Азовского, Аксайского, Мясниковского, Неклиновского и Родионово-Несветайского районов Ростовской области, а это более чем 1 485,800 тысячам человек.<br>
+					<p align="center"><img src="newIMG/21.jpg"></p>
+				</div>
+			</li>
+			<li>
+				<div class="titleN">
+					<span>
+						Четверг, 17 Июля 2024
+					</span>		
+					<h2>
+						Оператором связи ФГУП «РТРС» «Ростовский ОРТПЦ» введен в эксплуатацию фрагмент сети электросвязи в г. Волгодонск Ростовской области»
+					</h2>			
+				</div>
+				<div class="bodyN">
+					Управлением Роскомнадзора по Ростовской области принято участие в комиссии по вводу в эксплуатацию сети электросвязи (фрагмента сети электросвязи) филиала ФГУП «РТРС» «Ростовский ОРТПЦ» «Фрагмент сети электросвязи для организации вещания пакета программ «РТРС-1» и «РТРС-2» в цехе г. Волгодонск Ростовской области».<br>
+					<p align="center"><img src="newIMG/31.jpg"></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<footer id="navFooter">	</footer>
+	<script type="text/javascript">
+		function tick(){
+			$("#ticker li:first").slideUp(function(){
+				$(this).appendTo($("#ticker")).slideDown();
+			});
+		};
+		setInterval(function(){
+			tick();
+		}, 13000);
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/highlight.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#text-search').bind('keyup change', function(ev) {
+				var searchTerm = $(this).val();
+				$('body').removeHighlight();
+				if ( searchTerm ) {
+					$('body').highlight( searchTerm );
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function(){
+		  $("#navMenu").load("../menu/menu.html");
+		  $("#navFooter").load("../menu/footer.html");
+		  $("#navHeader").load("../menu/header.html");
+		  setTimeout(() => initMenu(), 1000);
+		});
+	</script>
+</body>
+</html>
